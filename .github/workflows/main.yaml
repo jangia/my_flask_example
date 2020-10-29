@@ -43,8 +43,8 @@ jobs:
       - name: Install dependencies
         run: poetry install
       - name: Run flake8
-        run: poetry run python -m flake8 .
+        run: poetry run flake8 .
       - name: Run bandit
-        run: poetry run python -m bandit .
+        run: poetry run bandit .
       - name: Run saftey
-        run: poetry run python -m saftey check
+        run: poetry run safety check
